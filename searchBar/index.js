@@ -10,7 +10,7 @@ let debounce = function(fn,d){
         args=arguments;
         clearTimeout(timer);
         timer = setTimeout(()=>{
-            getData.apply(this,args);
+            getData.apply(context,args);
         },d);
     }
 }
