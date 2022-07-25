@@ -18,3 +18,11 @@ Function.prototype.myBind= function(...args){
 
 const printData = printFunction.myBind(name,23,45)
 printData("India")
+const da={
+    name:"shashikant",
+    address:"chennai"
+}
+const s = {...da,name:"chandan"}
+console.log(s)
+const {...rest}= da
+console.log(rest)

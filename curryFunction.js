@@ -14,3 +14,4 @@ let add = function(a){
 
 let addNUmber = add(2)
 addNUmber(10)
+addNUmber(20)
