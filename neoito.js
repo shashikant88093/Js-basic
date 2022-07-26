@@ -16,7 +16,7 @@ console.log(maxNumber,sMaxNumber)
 }
 console.log(sMaxNumber)
 
-const arr = [1,2,3,5,7,9,4,5,6,7,8,9,10]
+const arr = [55,88,99,66,25,63,78,95,87,25,66,55]
 let obj = {}
 arr.forEach((item,i)=>{
          obj[item] = true
