@@ -1,16 +1,27 @@
 var removeDuplicates = function(nums) {
-    let obj ={
+    // let obj ={
 
+    // }
+    const length = nums.length;
+
+    if( length <= 1 ){
+        return length;
     }
-    // nums.forEach((item)=>{
-    //     obj[item] = true
-    // })
-    for(let i =0;i<nums.length;i++){
-        obj[nums[i]] = true
+
+    let i = 0;
+
+    for(let j = 1; j < length; j++){
+        if( nums[i] != nums[j] ){
+            i++;
+
+            nums[i] = nums[j];
+    console.log(nums[i])
+
+        }
     }
-    const uniqe = Object.keys(obj)
-    return uniqe
-};
+
+    return i + 1;
+ };
 
 let arr =[25,5,25,5,6,6,98,89]
 
