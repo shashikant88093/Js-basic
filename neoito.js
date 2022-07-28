@@ -17,8 +17,10 @@ console.log(maxNumber,sMaxNumber)
 console.log(sMaxNumber)
 
 const arr = [55,88,99,66,25,63,78,95,87,25,66,55]
-let obj = {}
-arr.forEach((item,i)=>{
-         obj[item] = true
-})
-console.log(Object.keys(obj))
+// let obj = {}
+// arr.forEach((item,i)=>{
+//          obj[item] = true
+// })
+// console.log(Object.keys(obj))
+let newData =arr.filter((item,i)=>{ return arr.indexOf(item) == i})
+console.log(newData)
